@@ -1,0 +1,238 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Huduma Centre Embu</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>HUDUMA CENTRE EMBU</h1>
+    <p>Customer Guidance & Queue Management System</p>
+</header>
+
+<main>
+
+    <!-- CUSTOMER SECTION -->
+
+    <section id="customerSection">
+
+        <div class="welcome">
+            <h2>Welcome</h2>
+
+            <p>
+                Select the service you need.
+            </p>
+
+            <input
+                type="text"
+                id="searchBox"
+                placeholder="🔎 Search service..."
+                onkeyup="searchServices()"
+            >
+        </div>
+
+        <div id="servicesContainer"></div>
+
+    </section>
+
+
+    <!-- SERVICE GUIDE -->
+
+    <section id="guide" class="guide hidden">
+
+        <button class="back-button" onclick="goBack()">
+            ← Back
+        </button>
+
+        <h2 id="guideTitle"></h2>
+
+        <div id="guideContent"></div>
+
+        <button
+            class="speak-button"
+            onclick="speakCurrentGuide()"
+        >
+            🔊 Hear Instructions
+        </button>
+
+        <button
+            class="queue-button"
+            onclick="getQueueNumber()"
+        >
+            🎟️ Get Queue Number
+        </button>
+
+    </section>
+
+
+    <!-- QUEUE NUMBER -->
+
+    <section id="queueSection" class="queue-card hidden">
+
+        <h2>Your Queue Number</h2>
+
+        <div id="queueNumber">
+            ---
+        </div>
+
+        <p>
+            Please wait for your number to be called.
+        </p>
+
+        <button
+            class="speak-button"
+            onclick="speakQueueNumber()"
+        >
+            🔊 Repeat Instructions
+        </button>
+
+    </section>
+
+
+    <!-- STAFF DASHBOARD -->
+
+    <section id="staffSection">
+
+        <h2>Staff Queue Dashboard</h2>
+
+        <div class="staff-controls">
+
+            <label>
+                Select Desk:
+            </label>
+
+            <select id="deskSelect">
+
+                <option value="Information Desk">
+                    Information Desk
+                </option>
+
+                <option value="ID Desk">
+                    ID Desk
+                </option>
+
+                <option value="KRA Desk">
+                    KRA Desk
+                </option>
+
+                <option value="NTSA Desk">
+                    NTSA Desk
+                </option>
+
+                <option value="Health Desk">
+                    Health Desk
+                </option>
+
+                <option value="Immigration Desk">
+                    Immigration Desk
+                </option>
+
+                <option value="Lands Desk">
+                    Lands Desk
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="current-customer">
+
+            <h3>NOW SERVING</h3>
+
+            <div id="currentNumber">
+                ---
+            </div>
+
+            <p id="currentDesk">
+                No customer being served
+            </p>
+
+        </div>
+
+
+        <button
+            class="call-button"
+            onclick="callNextCustomer()"
+        >
+            📢 CALL NEXT CUSTOMER
+        </button>
+
+
+        <button
+            class="recall-button"
+            onclick="recallCustomer()"
+        >
+            🔊 RECALL CUSTOMER
+        </button>
+
+
+        <div class="waiting">
+
+            <h3>Waiting Customers</h3>
+
+            <ul id="waitingList">
+                <li>No customers waiting</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+
+    <!-- PUBLIC DISPLAY -->
+
+    <section id="publicDisplay">
+
+        <h2>NOW BEING SERVED</h2>
+
+        <div id="publicNumber">
+            ---
+        </div>
+
+        <h3 id="publicDesk">
+            Please wait
+        </h3>
+
+        <hr>
+
+        <h3>NEXT CUSTOMER</h3>
+
+        <div id="publicNext">
+            ---
+        </div>
+
+        <p>
+            Please get ready.
+        </p>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        Huduma Centre Embu Customer Guidance System
+    </p>
+
+    <p>
+        Queue numbers are used instead of customer names.
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
+```
