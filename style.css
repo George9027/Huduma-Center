@@ -1,0 +1,318 @@
+```css
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f3;
+    color: #222;
+}
+
+header {
+    background: #087443;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+.welcome {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.welcome h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#searchBox {
+    width: 90%;
+    max-width: 600px;
+    padding: 16px;
+    margin-top: 20px;
+
+    border: 2px solid #087443;
+    border-radius: 10px;
+
+    font-size: 18px;
+}
+
+.category {
+    margin-bottom: 35px;
+}
+
+.category h2 {
+    color: #087443;
+    margin-bottom: 15px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 18px;
+}
+
+.service-card {
+    background: white;
+    border: none;
+    border-radius: 12px;
+
+    padding: 25px 15px;
+
+    min-height: 140px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 4px 12px rgba(0,0,0,0.10);
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+}
+
+.service-icon {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.service-card h3 {
+    color: #087443;
+    margin-bottom: 8px;
+}
+
+.guide,
+.queue-card,
+#staffSection,
+#publicDisplay {
+    background: white;
+    padding: 30px;
+
+    margin-top: 30px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 4px 15px rgba(0,0,0,0.10);
+}
+
+.guide-box {
+    background: #eef8f2;
+
+    padding: 20px;
+
+    margin: 20px 0;
+
+    border-left: 5px solid #087443;
+}
+
+.guide-box h3 {
+    color: #087443;
+    margin-bottom: 10px;
+}
+
+.guide-box ul {
+    margin-left: 25px;
+}
+
+.guide-box li {
+    margin-bottom: 10px;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+
+    padding: 14px 20px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+.back-button {
+    background: #555;
+    color: white;
+}
+
+.speak-button {
+    background: #087443;
+    color: white;
+
+    margin: 8px;
+}
+
+.queue-button {
+    background: #e6a700;
+    color: white;
+
+    margin: 8px;
+}
+
+.call-button {
+    background: #087443;
+    color: white;
+
+    width: 100%;
+
+    margin-top: 20px;
+
+    font-size: 20px;
+}
+
+.recall-button {
+    background: #555;
+    color: white;
+
+    width: 100%;
+
+    margin-top: 10px;
+}
+
+#queueNumber {
+    font-size: 60px;
+
+    font-weight: bold;
+
+    color: #087443;
+
+    text-align: center;
+
+    margin: 25px;
+}
+
+.current-customer {
+    text-align: center;
+
+    background: #eef8f2;
+
+    padding: 25px;
+
+    margin-top: 20px;
+}
+
+#currentNumber {
+    font-size: 65px;
+
+    font-weight: bold;
+
+    color: #087443;
+
+    margin: 15px;
+}
+
+#currentDesk {
+    font-size: 22px;
+}
+
+.waiting {
+    margin-top: 25px;
+}
+
+.waiting ul {
+    margin: 15px 25px;
+}
+
+.waiting li {
+    padding: 10px;
+
+    font-size: 18px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+#publicDisplay {
+    text-align: center;
+
+    background: #111;
+
+    color: white;
+}
+
+#publicNumber {
+    font-size: 90px;
+
+    font-weight: bold;
+
+    margin: 20px;
+
+    color: #fff;
+}
+
+#publicDesk {
+    font-size: 30px;
+
+    margin-bottom: 25px;
+}
+
+#publicNext {
+    font-size: 55px;
+
+    font-weight: bold;
+
+    margin: 15px;
+}
+
+hr {
+    margin: 25px 0;
+
+    border: none;
+
+    border-top: 2px solid #555;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    background: #222;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+    }
+
+    #publicNumber {
+        font-size: 60px;
+    }
+
+    #currentNumber {
+        font-size: 50px;
+    }
+}
+```
